@@ -191,22 +191,64 @@ public class ModRecipeGenerator extends RecipeProvider {
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 16))
                 .addCriterion("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
                 .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.M_ONE_ZERO_ONE_FOUR.get())
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 22))
+                .addCriterion("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+                .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.MP_SEVEN_A_TWO.get())
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 26))
+                .addCriterion("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+                .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.AK_ONE_TWO.get())
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 36))
+                .addCriterion("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+                .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.AK_ONE_FIVE.get())
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 36))
+                .addCriterion("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+                .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.AK_ONE_ZERO_FOUR.get())
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 30))
+                .addIngredient(WorkbenchIngredient.of(Items.BLACK_CONCRETE, 4))
+                .addCriterion("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+                .addCriterion("has_black_concrete", has(Items.BLACK_CONCRETE))
+                .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.P_TWO_FIVE_ZERO.get())
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 16))
+                .addCriterion("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+                .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.M_ONE_NINE_ONE_ONE.get())
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 17))
+                .addCriterion("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+                .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.MAGNUM.get())
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 19))
+                .addCriterion("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+                .build(consumer);
 
 
         // Scopes
         WorkbenchRecipeBuilder.crafting(ItemRegistry.HOLO_SCOPE.get())
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 7))
-                .addIngredient(WorkbenchIngredient.of(Items.GLASS_PANE, 2))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 7))
+                .addIngredient(WorkbenchIngredient.of(Items.GLASS_PANE, 1))
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.DUSTS_REDSTONE, 4))
-                .addCriterion("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+                .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
                 .addCriterion("has_glass_pane", has(Items.GLASS_PANE))
                 .addCriterion("has_redstone", has(Tags.Items.DUSTS_REDSTONE))
                 .build(consumer);
         WorkbenchRecipeBuilder.crafting(ItemRegistry.ZERKALO_SCOPE.get())
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 8))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 8))
                 .addIngredient(WorkbenchIngredient.of(Items.GLASS_PANE, 1))
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.DUSTS_REDSTONE, 4))
-                .addCriterion("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+                .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
+                .addCriterion("has_glass_pane", has(Items.GLASS_PANE))
+                .addCriterion("has_redstone", has(Tags.Items.DUSTS_REDSTONE))
+                .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.KOBRA_SCOPE.get())
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 3))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.GLASS_PANES, 1))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.DUSTS_REDSTONE, 2))
+                .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
                 .addCriterion("has_glass_pane", has(Items.GLASS_PANE))
                 .addCriterion("has_redstone", has(Tags.Items.DUSTS_REDSTONE))
                 .build(consumer);
@@ -215,7 +257,9 @@ public class ModRecipeGenerator extends RecipeProvider {
         // Stocks
         WorkbenchRecipeBuilder.crafting(ItemRegistry.BASIC_STOCK.get())
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 9))
+                .addIngredient(WorkbenchIngredient.of(Items.GRAY_WOOL, 1))
                 .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
+                .addCriterion("has_gray_wool", has(Items.GRAY_WOOL))
                 .build(consumer);
         WorkbenchRecipeBuilder.crafting(ItemRegistry.VINTOREZ_STOCK.get())
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 4))
@@ -232,6 +276,22 @@ public class ModRecipeGenerator extends RecipeProvider {
                 .addCriterion("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
                 .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
                 .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.TACTICAL_SILENCER.get())
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 4))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 2))
+                .addCriterion("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+                .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
+                .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.SNIPER_MUZZLE_BRAKE.get())
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 8))
+                .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
+                .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.TACTICAL_MUZZLE_BRAKE.get())
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 3))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 8))
+                .addCriterion("has_iron_ingot", has(Tags.Items.INGOTS_IRON))
+                .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
+                .build(consumer);
 
 
         // Under Barrels
@@ -244,85 +304,79 @@ public class ModRecipeGenerator extends RecipeProvider {
 
 
         // Ammunition
-        WorkbenchRecipeBuilder.crafting(ItemRegistry.AMMO_NINE.get(), 16)
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.GUNPOWDER, 1))
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 2))
-                .addIngredient(WorkbenchIngredient.of(Items.BLACK_DYE, 1))
-                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
-                .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
-                .addCriterion("has_black_dye", has(Items.BLACK_DYE))
-                .build(consumer);
-        WorkbenchRecipeBuilder.crafting(ItemRegistry.AMMO_FORTY_FIVE.get(), 16)
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.GUNPOWDER, 2))
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 1))
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_GOLD, 2))
-                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
-                .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
-                .addCriterion("has_gold_nugget", has(Tags.Items.NUGGETS_GOLD))
-                .build(consumer);
-        WorkbenchRecipeBuilder.crafting(ItemRegistry.AMMO_FIVE_FOUR_FIVE.get(), 16)
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.BULLET_HEAVY.get(), 16)
+                .addIngredient(WorkbenchIngredient.of(ItemRegistry.CASING_HEAVY.get(), 16))
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.GUNPOWDER, 4))
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 4))
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_GOLD, 1))
-                .addIngredient(WorkbenchIngredient.of(Items.RED_DYE, 1))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_GOLD, 4))
+                .addCriterion("has_casing", has(ItemRegistry.CASING_HEAVY.get()))
                 .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
-                .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
                 .addCriterion("has_gold_nugget", has(Tags.Items.NUGGETS_GOLD))
-                .addCriterion("has_red_dye", has(Items.RED_DYE))
                 .build(consumer);
-        WorkbenchRecipeBuilder.crafting(ItemRegistry.AMMO_FIVE_FIVE_SIX.get(), 16)
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.BULLET_LONG.get(), 16)
+                .addIngredient(WorkbenchIngredient.of(ItemRegistry.CASING_LONG.get(), 16))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.GUNPOWDER, 4))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_GOLD, 4))
+                .addCriterion("has_casing", has(ItemRegistry.CASING_LONG.get()))
+                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
+                .addCriterion("has_gold_nugget", has(Tags.Items.NUGGETS_GOLD))
+                .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.BULLET_MEDIUM.get(), 24)
+                .addIngredient(WorkbenchIngredient.of(ItemRegistry.CASING_MEDIUM.get(), 24))
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.GUNPOWDER, 3))
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 4))
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_GOLD, 1))
-                .addIngredient(WorkbenchIngredient.of(Items.WHITE_DYE, 1))
-                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
-                .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
-                .addCriterion("has_gold_nugget", has(Tags.Items.NUGGETS_GOLD))
-                .addCriterion("has_white_dye", has(Items.WHITE_DYE))
-                .build(consumer);
-        WorkbenchRecipeBuilder.crafting(ItemRegistry.AMMO_SEVEN_SIX_TWO_FIFTY_ONE.get(), 16)
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.GUNPOWDER, 5))
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 5))
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_GOLD, 3))
+                .addCriterion("has_casing", has(ItemRegistry.CASING_MEDIUM.get()))
                 .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
-                .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
                 .addCriterion("has_gold_nugget", has(Tags.Items.NUGGETS_GOLD))
                 .build(consumer);
-        WorkbenchRecipeBuilder.crafting(ItemRegistry.AMMO_NINE_THREE_NINE.get(), 16)
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.BULLET_SHORT.get(), 32)
+                .addIngredient(WorkbenchIngredient.of(ItemRegistry.CASING_SHORT.get(), 32))
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.GUNPOWDER, 4))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_GOLD, 2))
+                .addCriterion("has_casing", has(ItemRegistry.CASING_SHORT.get()))
+                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
+                .addCriterion("has_gold_nugget", has(Tags.Items.NUGGETS_GOLD))
+                .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.BULLET_SMALL.get(), 32)
+                .addIngredient(WorkbenchIngredient.of(ItemRegistry.CASING_SMALL.get(), 32))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.GUNPOWDER, 2))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_GOLD, 2))
+                .addCriterion("has_casing", has(ItemRegistry.CASING_SMALL.get()))
+                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
+                .addCriterion("has_gold_nugget", has(Tags.Items.NUGGETS_GOLD))
+                .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.BULLET_SPECIAL.get(), 16)
+                .addIngredient(WorkbenchIngredient.of(ItemRegistry.CASING_SPECIAL.get(), 16))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.GUNPOWDER, 2))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_GOLD, 2))
+                .addCriterion("has_casing", has(ItemRegistry.CASING_SPECIAL.get()))
+                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
+                .addCriterion("has_gold_nugget", has(Tags.Items.NUGGETS_GOLD))
+                .build(consumer);
+
+        // Ammo casings
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.CASING_HEAVY.get(), 16)
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 4))
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_GOLD, 2))
-                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
                 .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
-                .addCriterion("has_gold_nugget", has(Tags.Items.NUGGETS_GOLD))
                 .build(consumer);
-        WorkbenchRecipeBuilder.crafting(ItemRegistry.AMMO_NINE_THREE_NINE_SP_FIVE.get(), 16)
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.GUNPOWDER, 4))
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 6))
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_GOLD, 2))
-                .addIngredient(WorkbenchIngredient.of(Items.BLUE_DYE, 1))
-                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.CASING_LONG.get(), 16)
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 4))
                 .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
-                .addCriterion("has_gold_nugget", has(Tags.Items.NUGGETS_GOLD))
-                .addCriterion("has_blue_dye", has(Items.BLUE_DYE))
                 .build(consumer);
-        WorkbenchRecipeBuilder.crafting(ItemRegistry.AMMO_NINE_THREE_NINE_SP_SIX.get(), 16)
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.GUNPOWDER, 4))
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 6))
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_GOLD, 2))
-                .addIngredient(WorkbenchIngredient.of(Items.GREEN_DYE, 1))
-                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.CASING_MEDIUM.get(), 24)
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 3))
                 .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
-                .addCriterion("has_gold_nugget", has(Tags.Items.NUGGETS_GOLD))
-                .addCriterion("has_green_dye", has(Items.GREEN_DYE))
                 .build(consumer);
-        WorkbenchRecipeBuilder.crafting(ItemRegistry.AMMO_JCC.get(), 32)
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.GUNPOWDER, 1))
-                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 6))
-                .addIngredient(WorkbenchIngredient.of(Items.CACTUS, 1))
-                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.CASING_SHORT.get(), 32)
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 2))
                 .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
-                .addCriterion("has_cactus", has(Items.CACTUS))
+                .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.CASING_SMALL.get(), 32)
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 2))
+                .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
+                .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ItemRegistry.CASING_SPECIAL.get(), 16)
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 4))
+                .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
                 .build(consumer);
     }
 }

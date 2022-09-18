@@ -1,0 +1,20 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 3,
+      "tag": "forge:nuggets/iron"
+    },
+    {
+      "count": 1,
+      "tag": "forge:glass_panes"
+    },
+    {
+      "count": 2,
+      "tag": "forge:dusts/redstone"
+    }
+  ],
+  "result": {
+    "item": "additionalguns:kobra"
+  }
+}

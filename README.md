@@ -1,3 +1,5 @@
+![banner](https://i.postimg.cc/MGHJy92p/banner.png)
+
 ### 📖 About:
 
 We all love MrCrayfish's Gun Mod, but have you ever wanted more?\
@@ -6,7 +8,7 @@ Well, the community has come together to add more! This addon introduces a range
 
 ### 🔨 Contributing
 
-Check out the [Additional Guns Wiki](https://github.com/Mr-Pineapple/AdditionalGuns/wiki/How-To-Contribute:-Introduction) if you would like to submit a weapon or other asset to add to the mod.
+Check out the [Additional Guns Wiki](https://github.com/Pinelog-Studios/AdditionalGuns/wiki/How-To-Contribute:-Introduction) if you would like to submit a weapon or other asset to add to the mod.
 
 ### 📜 Current Contributors
 
@@ -20,6 +22,12 @@ After submitting a model or working on the addon, we'll add your name here as we
  - Pomeow16
  - VIKTORWOOD
  - PixVoxel
+ - Mercuriousity
+ - Stabilizer
+ - CasualNoLifer
+ - Igggosha
+ - W1therFl1nt343
+ - Joel McCassidy
 
 ### 📥 Updates & Downloads
 

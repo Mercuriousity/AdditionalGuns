@@ -2,6 +2,7 @@ package co.uk.mrpineapple.additionalguns.core.registry;
 
 import co.uk.mrpineapple.additionalguns.core.AdditionalGuns;
 import co.uk.mrpineapple.additionalguns.core.item.AdditionalGunItem;
+import co.uk.mrpineapple.additionalguns.core.item.BulletCasingItem;
 import com.mrcrayfish.guns.common.GunModifiers;
 import com.mrcrayfish.guns.item.*;
 import com.mrcrayfish.guns.item.attachment.impl.Barrel;
@@ -49,36 +50,50 @@ public class ItemRegistry {
     public static final RegistryObject<Item> AKS_SEVENTY_FOUR_U = registerGun("aks74u", true);
     public static final RegistryObject<Item> M_SIXTEEN_A_TWO = registerGun("m16a2", true);
     public static final RegistryObject<Item> USP = registerGun("usp", true);
+    public static final RegistryObject<Item> M_ONE_ZERO_ONE_FOUR = registerGun("m1014", true);
+    public static final RegistryObject<Item> MP_SEVEN_A_TWO = registerGun("mp7a2", true);
+    public static final RegistryObject<Item> AK_ONE_TWO = registerGun("ak12", true);
+    public static final RegistryObject<Item> AK_ONE_FIVE = registerGun("ak15", true);
+    public static final RegistryObject<Item> AK_ONE_ZERO_FOUR = registerGun("ak104", true);
+    public static final RegistryObject<Item> P_TWO_FIVE_ZERO = registerGun("p250", true);
+    public static final RegistryObject<Item> M_ONE_NINE_ONE_ONE = registerGun("m1911", true);
+    public static final RegistryObject<Item> MAGNUM = registerGun("magnum", true);
 
     /* Scope Attachments */
-    public static final RegistryObject<Item> HOLO_SCOPE = ITEMS.register("holo_scope", () -> new ScopeItem(Scope.create(0.25F, 1.375F, GunModifiers.SLOW_ADS).viewFinderOffset(0.3), genericProperties, false));
-    public static final RegistryObject<Item> ZERKALO_SCOPE = ITEMS.register("zerkalo_scope", () -> new ScopeItem(Scope.create(0.025F, 1.275F, GunModifiers.SLOWER_ADS).viewFinderOffset(0.3), genericProperties, false));
+    public static final RegistryObject<Item> HOLO_SCOPE = ITEMS.register("holo_scope", () -> new ScopeItem(Scope.create(0.25F, 1.6F, GunModifiers.SLOW_ADS).viewFinderOffset(0.4), genericProperties, false));
+    public static final RegistryObject<Item> ZERKALO_SCOPE = ITEMS.register("zerkalo_scope", () -> new ScopeItem(Scope.create(0.025F, 1.25F, GunModifiers.SLOWER_ADS).viewFinderOffset(0.3), genericProperties, false));
+    public static final RegistryObject<Item> KOBRA_SCOPE = ITEMS.register("kobra", () -> new ScopeItem(Scope.create(0.15F, 1.75F, GunModifiers.SLOW_ADS).viewFinderOffset(0.4), genericProperties));
     // Removed until fixed!
     //public static final RegistryObject<Item> ULTRA_LONG_SCOPE = ITEMS.register("extra_long_scope", () -> new ScopeItem(Scope.create(0.45F, 1.25D, GunModifiers.SLOWER_ADS).viewFinderOffset(0.5), genericProperties));
 
     /* Stock Attachments */
-    public static final RegistryObject<Item> BASIC_STOCK = ITEMS.register("basic_stock", () -> new StockItem(Stock.create(GunModifiers.SLOW_ADS), genericProperties, false));
-    public static final RegistryObject<Item> VINTOREZ_STOCK = ITEMS.register("vintorez_stock", () -> new StockItem(Stock.create(GunModifiers.SLOW_ADS), genericProperties, false));
-    // Removed until fixed!
-    //public static final RegistryObject<Item> FLIMSY_STOCK = ITEMS.register("flimsy_stock", () -> new StockItem(Stock.create(GunModifiers.SLOWER_ADS), genericProperties, true));
-    //public static final RegistryObject<Item> MAMMOTH_STOCK = ITEMS.register("mammoth_stock", () -> new StockItem(Stock.create(GunModifiers.SLOW_ADS), genericProperties, false));
+    public static final RegistryObject<Item> BASIC_STOCK = ITEMS.register("basic_stock", () -> new StockItem(Stock.create(GunModifiers.STABILISED), genericProperties, false));
+    public static final RegistryObject<Item> VINTOREZ_STOCK = ITEMS.register("vintorez_stock", () -> new StockItem(Stock.create(GunModifiers.BETTER_CONTROL), genericProperties, false));
 
     /* Barrel Attachments */
     public static final RegistryObject<Item> MUZZLE_BRAKE = ITEMS.register("muzzle_brake", () -> new BarrelItem(Barrel.create(9.5f, GunModifiers.REDUCED_RECOIL), genericProperties, false));
+    public static final RegistryObject<Item> TACTICAL_SILENCER = ITEMS.register("tactical_silencer", () -> new BarrelItem(Barrel.create(16.0f, GunModifiers.SILENCED), genericProperties));
+    public static final RegistryObject<Item> SNIPER_MUZZLE_BRAKE = ITEMS.register("sniper_muzzle_brake", () -> new BarrelItem(Barrel.create(6.0f, GunModifiers.BETTER_CONTROL), genericProperties));
+    public static final RegistryObject<Item> TACTICAL_MUZZLE_BRAKE = ITEMS.register("tactical_muzzle_brake", () -> new BarrelItem(Barrel.create(7.5f, GunModifiers.REDUCED_RECOIL), genericProperties, false));
 
     /* Under Barrel Attachments */
     public static final RegistryObject<Item> ANGLED_GRIP = ITEMS.register("angled_grip", () -> new UnderBarrelItem(UnderBarrel.create(GunModifiers.LIGHT_RECOIL), genericProperties));
 
     /* Ammunition */
-    public static final RegistryObject<Item> AMMO_NINE = registerAmmo("ammo_9");
-    public static final RegistryObject<Item> AMMO_FORTY_FIVE = registerAmmo("ammo_45");
-    public static final RegistryObject<Item> AMMO_FIVE_FOUR_FIVE = registerAmmo("ammo_545");
-    public static final RegistryObject<Item> AMMO_FIVE_FIVE_SIX = registerAmmo("ammo_556");
-    public static final RegistryObject<Item> AMMO_SEVEN_SIX_TWO_FIFTY_ONE = registerAmmo("ammo_762_51");
-    public static final RegistryObject<Item> AMMO_NINE_THREE_NINE = registerAmmo("ammo_939");
-    public static final RegistryObject<Item> AMMO_NINE_THREE_NINE_SP_FIVE = registerAmmo("ammo_939_sp5");
-    public static final RegistryObject<Item> AMMO_NINE_THREE_NINE_SP_SIX = registerAmmo("ammo_939_sp6");
-    public static final RegistryObject<Item> AMMO_JCC = registerAmmo("ammo_jcc");
+    public static final RegistryObject<Item> BULLET_HEAVY = registerAmmo("bullet_heavy");
+    public static final RegistryObject<Item> BULLET_LONG = registerAmmo("bullet_long");
+    public static final RegistryObject<Item> BULLET_MEDIUM = registerAmmo("bullet_medium");
+    public static final RegistryObject<Item> BULLET_SHORT = registerAmmo("bullet_short");
+    public static final RegistryObject<Item> BULLET_SMALL = registerAmmo("bullet_small");
+    public static final RegistryObject<Item> BULLET_SPECIAL = registerAmmo("bullet_special");
+
+    /* Bullet casings */
+    public static final RegistryObject<Item> CASING_HEAVY = registerCasing("casing_heavy");
+    public static final RegistryObject<Item> CASING_LONG = registerCasing("casing_long");
+    public static final RegistryObject<Item> CASING_MEDIUM = registerCasing("casing_medium");
+    public static final RegistryObject<Item> CASING_SHORT = registerCasing("casing_short");
+    public static final RegistryObject<Item> CASING_SMALL = registerCasing("casing_small");
+    public static final RegistryObject<Item> CASING_SPECIAL = registerCasing("casing_special");
 
     /**
      * Helper method used to register guns in Additional Guns.
@@ -99,5 +114,9 @@ public class ItemRegistry {
      */
     private static RegistryObject<Item> registerAmmo(String name) {
         return ITEMS.register(name, () -> new AmmoItem(new Item.Properties().tab(AdditionalGuns.GROUP)));
+    }
+
+    private static RegistryObject<Item> registerCasing(String name) {
+        return ITEMS.register(name, () -> new BulletCasingItem(new Item.Properties().tab(AdditionalGuns.GROUP)));
     }
 }

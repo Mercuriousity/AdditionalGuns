@@ -1,43 +1,43 @@
 modLoader="javafml"
-loaderVersion="[39,)"
+loaderVersion="[41,)"
 license="GNU General Public License v3.0"
-issueTrackerURL="https://github.com/Mr-Pineapple/AdditionalGuns/issues"
+issueTrackerURL="https://github.com/Pinelog-Studios/AdditionalGuns/issues"
 
 [[mods]]
     modId="additionalguns"
-    version="0.4.2"
+    version="0.7.2"
     displayName="Additional Guns"
-    updateJSONURL="https://raw.githubusercontent.com/Mr-Pineapple/ModUpdateJSON/master/additionalguns/update.json"
+    updateJSONURL="https://raw.githubusercontent.com/Pinelog-Studios/VersionChecker/main/additionalguns/update.json"
     displayURL="https://www.curseforge.com/minecraft/mc-mods/additional-guns"
-    authors="Mr. Pineapple"
-    credits="Autovw - Code, ThatAvocado_Boi, JamesTheMaker, JaMychal1, SirSpark1313, VIKTORWOOD - Assets"
+    authors="Mr. Pineapple, Autovw"
+    credits="ThatAvocado_Boi, JamesTheMaker, JaMychal1, SirSpark1313, VIKTORWOOD, Mercuriousity, Stabilizer, CasualNoLifer, Igggosha, W1therFl1nt343, Joel McCassidy"
     description="A community addon pack for MrCrayfish's Gun Mod - To contribute, head over the GitHub or simply join discord.gg/mrcrayfish and let us know!"
 
 [[dependencies.additionalguns]]
     modId="forge"
     mandatory=true
-    versionRange="[39,)"
+    versionRange="[41.0.94,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.additionalguns]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.1,1.19)"
+    versionRange="[1.19,1.20)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.additionalguns]]
     modId="cgm"
     mandatory=true
-    versionRange="[1.1.2,)"
+    versionRange="[1.2.8,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.additionalguns]]
     modId="framework"
     mandatory=true
-    versionRange="[0.2.2,)"
+    versionRange="[0.3.2,)"
     ordering="NONE"
     side="BOTH"
 
 [modproperties.additionalguns]
-    catalogueItemIcon="additionalguns:ammo_762_51"
+    catalogueItemIcon="additionalguns:ace_of_spades"
     configuredBackground="minecraft:textures/block/stripped_birch_log.png"
